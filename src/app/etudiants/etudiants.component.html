@@ -1,0 +1,12 @@
+<section>
+  <header>
+    <h3>Les etudiants :</h3>
+  </header>
+  <article *ngFor="let etu of etuService.listeEtudiants; let i=index;">
+    <h4>{{etu.nom +' '+etu.prenom}}</h4>
+    <p>Age : {{etu.age}}</p>
+    <p>Sexe : {{etu.sexe}}</p>
+    <p>Qualite : {{etu.qualite}}</p>
+    <a href [routerLink]="['/etudiants/edition', i]">edit</a>
+  </article>
+</section>

@@ -1,0 +1,10 @@
+<section>
+<form (submit)="SubmitAuth()">
+  <label for="id">Votre identifiant :</label>
+  <input type="text" name="id" [(ngModel)]="auth.id" id="id"  placeholder="votre id" (input)="SubmitAuth()" required>
+  <label for="mdp">Votre mots de passe :</label>
+  <input type="text" name="mdp" [(ngModel)]="auth.mdp" id="mdp" placeholder="votre mdp" (input)="SubmitAuth()" required>
+  <input type="submit" name="connexion" value="se connecter"/>
+  <input type="button" name="sup" value="reset"/>
+</form>
+</section>

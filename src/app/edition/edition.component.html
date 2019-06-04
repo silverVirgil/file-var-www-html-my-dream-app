@@ -1,0 +1,12 @@
+<section>
+    <h3>Rajouter etudiants :</h3>
+  <form #form="ngForm" (submit)="submitChange(form)">
+    <input type="text" name="nom" [(ngModel)]="etuService.listeEtudiants[index].nom" id="nom"><br/>
+    <input type="text" name="prenom" [(ngModel)]="etuService.listeEtudiants[index].prenom" id="prenom"><br/>
+    <input type="age" name="age" [(ngModel)]="etuService.listeEtudiants[index].age" id="age"><br/>
+    <input type="text" name="sexe" [(ngModel)]="etuService.listeEtudiants[index].sexe" id="sexe"><br/>
+    <input type="text" name="qualite" [(ngModel)]="etuService.listeEtudiants[index].qualite" id="qualite"><br/>
+    <input type="reset" value="Annuler">
+    <input type="submit" value="Envoyer">
+  </form>
+</section>
